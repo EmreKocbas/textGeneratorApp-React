@@ -1,38 +1,89 @@
-.App {
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+  background-color: rgb(44, 44, 44) !important;
+  font-family: "Rubik", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 300 !important;
+  font-style: normal !important;
+  color: #fff !important;
+}
+.body{   
+  background-color: rgb(68, 68, 68);
+  padding: 40px;
+  border-radius: 1rem;
+}
+.include option {
+  background-color: #fff; /* Arka plan rengi */
+  color: #333; /* Metin rengi */
+  font-size: 15px; /* Yazı tipi boyutu */
+}
+.include select option:checked {
+  background-color: #6b6b6b; /* Arka plan rengi */
+  color: #fff; /* Metin rengi */
+}
+
+.include select{
+  cursor: pointer;
+  border: none;
+  padding: 8px 5px;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+p{
+  color: #fff;
+}
+.title{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.paragraph input{
+  width: 100px; /* Genişlik */
+    padding: 8px; /* İç boşluk */
+    border: none;
+    border-radius: 5px; /* Kenar yuvarlama */
+    background-color: #fff; /* Arka plan rengi */
+    color: #333; /* Metin rengi */
+    font-size: 15px; /* Yazı tipi boyutu */
+    outline: none; /* Dış hat */
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
   display: flex;
-  flex-direction: column;
+  justify-content: left;
   align-items: center;
+}
+.paragraph{
+  font-weight: bold;
+  margin: 20px 20px 20px 0;
+}
+.include{
+  font-weight: bold;
+}
+.footer{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+a{
+  text-decoration: none;
+  font-size: 40px;
+  margin: 10px;
+  color: #ffffff;
+  transition: 0.3s ;
+}
+a:active {
+  color: #424242; /* Aktif metin rengi */
+}
+a:hover {
+  color: #6b6b6b; /* Hover sırasında metin rengi */
+}
+a:visited{
+  /* Ziyaret edilen metin rengi */
+  color: #ff812d;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a:visited:hover{
+  color: #ffffff;
 }
